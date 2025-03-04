@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes full viewport height */
+    display: grid;
+    grid-template-rows: 2fr 1fr 5fr 3fr; /* Define grid rows for header, nav, container, and footer */
+}
+
+header, main, aside, footer {
+    padding: 20px;
+    margin: 0; /* Remove margin to eliminate white lines */
+}
+
+header {
+    background-color: #393636;
+    color: #fff;
+}
+
+nav {
+    display: flex; /* Use Flexbox for navigation menu */
+    background-color: #000;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Ensure container takes full height of its grid area */
+}
+
+main {
+    background-color: #dfdfd5;
+    flex: 2;
+}
+
+aside {
+    background-color: white;
+    flex: 1;
+}
+
+footer {
+    background-color: #3e423f;
+    text-align: center;
+    color: #fff;
+}

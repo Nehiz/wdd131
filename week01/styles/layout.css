@@ -100,7 +100,7 @@ footer {
             "nav nav"
             "main aside"
             "footer footer";
-        grid-template-columns: 3fr 1fr; /* Main takes 3 parts, aside takes 1 */
+        grid-template-columns: 2fr 1fr; /* Main takes 2 parts, aside takes 1 */
         grid-template-rows: auto auto 1fr auto; /* Adjust rows */
     }
 }

@@ -1,53 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ensure body takes full viewport height */
-    display: grid;
-    grid-template-rows: 2fr 1fr 5fr 3fr; /* Define grid rows for header, nav, container, and footer */
+    box-sizing: border-box;
 }
 
-header, main, aside, footer {
-    padding: 20px;
-    margin: 0; /* Remove margin to eliminate white lines */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 2fr 2fr 5fr 2fr; /* Adjusted height ratios */
+    grid-template-rows: auto auto 1fr auto auto; /* Header, nav, main (flexible), aside, footer */
+    height: 100vh; 
+    font-family: Arial, sans-serif; 
 }
 
 header {
-    background-color: #393636;
+    grid-area: header;
+    background-color: #333;
     color: #fff;
+}
+
+header h2 {
+    padding: 1rem;
+    padding-bottom: 3rem; 
 }
 
 nav {
-    display: flex; /* Use Flexbox for navigation menu */
-    background-color: #000;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    grid-area: nav;
+    background-color: #1a1a1a;;
 }
 
-nav a {
+nav ul {
+    display: flex; 
+    list-style-type: none;
+    justify-content: space-around; 
+    padding: 0.5rem 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    font-weight: bold;
 }
 
-.container {
-    display: flex;
-    height: 100%; /* Ensure container takes full height of its grid area */
+nav ul li a:hover {
+    color: blanchedalmond;
+    background-color: black;
+    transition: color 0.3s;
+    border-radius: 5px;
 }
 
 main {
-    background-color: #dfdfd5;
-    flex: 2;
+    display: contents; 
+}
+
+section {
+    grid-area: main; 
+    background-color: #d3d3d3;
+}
+
+section h2 {
+    color: #4a4a4a;
+    padding: 10px;
 }
 
 aside {
-    background-color: white;
-    flex: 1;
+    grid-area: aside; 
+    background-color: #fff;
 }
 
+aside h2 {
+    color: #4a4a4a;
+    padding: 10px;
+}
+
+
 footer {
-    background-color: #3e423f;
-    text-align: center;
+    grid-area: footer;
+    background-color: #333;
     color: #fff;
+    padding: 3rem;
+    text-align: center;
+}
+
+
+/* Responsive design for larger screens (e.g., to place main and aside side by side) */
+@media (min-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 3fr 1fr; /* Main takes 3 parts, aside takes 1 */
+        grid-template-rows: auto auto 1fr auto; /* Adjust rows */
+    }
 }

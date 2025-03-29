@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #4B0082;
+    background-color: #2F2A44;
     color: white;
     padding: 1rem;
     position: relative;
@@ -49,7 +49,7 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #4B0082;
+    background-color: #2F2A44;
 }
 
 .navigation a {
@@ -63,7 +63,7 @@ nav {
 }
 
 .navigation a:hover {
-    background-color: #6A5ACD;
+    background-color: #483D8B;
     color: white;
     font-weight: 700;
 }
@@ -73,7 +73,7 @@ nav {
 }
 
 .active {
-    background-color: #6A5ACD;
+    background-color: #483D8B;
     font-weight: 700;
 }
 
@@ -115,7 +115,7 @@ figcaption {
 }
 
 footer {
-    background-color: #4B0082;
+    background-color: #2F2A44;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -125,4 +125,10 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/* Fix for div.whitespace--nowrap.shrink-0 contrast error */
+.whitespace--nowrap.shrink-0 {
+    color: #ffffff !important;
+    background-color: #333333 !important;
 }

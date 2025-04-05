@@ -1,0 +1,55 @@
+/* Enhance the hero image section */
+.hero img {
+    border-radius: 10px; /* Add rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+/* Style the data section */
+.data dl {
+    background-color: #f9f9f9; /* Light background for better readability */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 1rem; /* Add padding inside the data box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+}
+
+/* Style the weather section */
+.weather dl {
+    background-color: #f9f9f9; /* Light background for better readability */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 1rem; /* Add padding inside the weather box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+}
+
+/* Style the headings */
+.data h2,
+.weather h2 {
+    text-transform: uppercase; /* Make headings uppercase for emphasis */
+    letter-spacing: 1px; /* Add spacing between letters for readability */
+    color: #1a1a1a; /* Darkened text color for better contrast */
+}
+
+/* Style the footer */
+footer {
+    border-top: 2px solid #ccc; /* Add a top border to separate the footer */
+    font-size: 0.9rem; /* Slightly reduce font size for footer text */
+    color: #e0e0e0; /* Lighten footer text for a subtle look */
+}
+
+/* Style the weather icon */
+.weather-icon-mobile,
+.weather-icon-large {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Add a shadow to the icon */
+}
+
+/* Add hover effects for links */
+a {
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    color: var(--primary-color); /* Change text color on hover */
+    background-color: var(--accent-color); /* Add a background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}

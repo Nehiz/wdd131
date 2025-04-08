@@ -92,7 +92,7 @@ dt {
 
     .hero img {
         width: 100%;
-        height: 600px; /* Fixed height for desktop view to allow overlay */
+        height: auto; /* Fixed height for desktop view to allow overlay */
         object-fit: cover; /* Image covers the area */
     }
 

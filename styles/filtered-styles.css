@@ -47,6 +47,13 @@ main {
     padding: 2rem 1rem;
 }
 
+main h2 {
+    font-size: 2rem;
+    color: #1a3c34;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 #temple-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -61,7 +68,7 @@ main {
     text-align: center;
 }
 
-.temple-card h3 { /* Changed from h2 to h3 */
+.temple-card h3 {
     font-size: 1.5rem;
     color: #1a3c34;
     margin-bottom: 0.5rem;
@@ -76,8 +83,8 @@ main {
     max-width: 400px;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 1rem; 
-    aspect-ratio: 400 /250;
+    margin-bottom: 1rem;
+    aspect-ratio: 400 / 250;
 }
 
 footer {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Pi and Beads – an interactive learning program for kids combining AI, coding, and abacus math.">
+    <meta name="author" content="Nehikhare Efehi">
+    <title>Pi and Beads – Abacus, Coding, and AI for Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="Go to Pi and Beads homepage">
+            <img src="images/logo.webp" alt="Pi and Beads Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+                <li><a href="about.html" aria-label="Learn more about Pi and Beads">About</a></li>
+                <li><a href="tracks.html" aria-label="Explore learning tracks">Tracks</a></li>
+                <li><a href="contact.html" aria-label="Get in touch with us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-slideshow">
+                <img src="images/abacus.webp" alt="Kids using abacus tools"
+                    aria-label="Children learning with abacus" class="hero-slide">
+                <img src="images/coding.webp" alt="Kids coding on laptops" aria-label="Children coding on laptops"
+                    class="hero-slide">
+                <img src="images/hero-ai.webp" alt="Kids exploring AI activities"
+                    aria-label="Children engaged in AI activities" class="hero-slide">
+                    <img src="images/hero-coding.webp" alt="Kids exploring AI activities" aria-label="Children engaged in AI activities"
+                        class="hero-slide">
+            </div>
+            <div class="hero-text">
+                <h2>Welcome to Pi and Beads</h2>
+                <p>Learn AI, Coding, & Math</p>
+                <a href="#quiz" class="cta-button" aria-label="Start the interactive quiz">Take the Quiz</a>
+            </div>
+            <button class="prev" aria-label="Previous slide">❮</button>
+            <button class="next" aria-label="Next slide">❯</button>
+        </section>
+        <section id="quiz" class="interactive-quiz">
+            <h2>Interactive Quiz</h2>
+            <p>Question: What is the primary tool used in abacus math?</p>
+            <button aria-label="Select Abacus as answer">Abacus</button>
+            <button aria-label="Select Calculator as answer">Calculator</button>
+            <button aria-label="Select Tablet as answer">Tablet</button>
+            <p id="score" aria-live="polite">Score: 0</p>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> Nehikhare Efehi | Nigeria</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</body>
+
+</html>

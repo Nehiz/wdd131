@@ -14,9 +14,9 @@ body {
     font-size: 1.1rem;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Poppins', sans-serif;
-    color: #FFFFFF; /* White for headings */
+    color: #333;/* White for headings */
     font-weight: 700;
 }
 
@@ -29,22 +29,26 @@ h2 {
 }
 
 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 1.75rem;
+    color:#333333
 }
 
 /* Header */
 header {
-    background-color: #2A5CA8;
+    background-color: #092f69;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     max-height: 200px;
+ 
 }
 
 .logo {
-    max-width: 180px;
+    max-width: 180px; /* Adjust based on your logo size */
     height: auto;
     padding: 1rem;
 }
@@ -61,14 +65,14 @@ nav a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* increase font size */
     padding: 0.75rem 1rem;
     transition: all 0.3s ease;
 }
 
 nav a:hover, nav a[aria-current="page"] {
-    color: #FFC107; /* Lighter yellow for better contrast */
-    background-color: rgba(0, 0, 0, 0.3); /* Slightly darker for readability */
+    color: #F5A623; /* Sunshine Yellow for active/hover */
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
@@ -80,10 +84,14 @@ nav a:hover, nav a[aria-current="page"] {
     overflow: hidden;
 }
 
+.hero-text h2 {
+    color: #FFFFFF;
+}
+
 .hero-slideshow {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 400px; /* Fixed height for slideshow */
 }
 
 .hero-slide {
@@ -106,11 +114,10 @@ nav a:hover, nav a[aria-current="page"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(30, 67, 122, 0.8); /* Darker blue for better contrast */
+    background-color: rgba(42, 92, 168, 0.7); /* Semi-transparent darker blue */
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Added for legibility */
 }
 
 .hero-text h2 {
@@ -119,6 +126,8 @@ nav a:hover, nav a[aria-current="page"] {
 }
 
 .hero-text p {
+    color: #FFFFFF;
+    font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1.25rem;
 }
@@ -144,20 +153,20 @@ nav a:hover, nav a[aria-current="page"] {
 }
 
 .cta-button {
-    background-color: #E69500; /* Darker yellow for better contrast */
-    color: #FFFFFF;
+    background-color: #F5A623;
+    color: #212121;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.3rem;  /* I stopped here */
     display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: #2A5CA8;
+    background-color: #2A5CA8; /* Darker blue on hover */
 }
 
 /* Interactive Quiz */
@@ -167,18 +176,17 @@ nav a:hover, nav a[aria-current="page"] {
 }
 
 .interactive-quiz button {
-    background-color: #E69500; /* Darker yellow */
-    color: #FFFFFF;
+    background-color: #F5A623;
+    color: #212121;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     margin: 0.5rem;
     cursor: pointer;
-    font-size: 1.2rem; /* Matches updated nav size */
 }
 
 .interactive-quiz button:hover {
-    background-color: #2A5CA8;
+    background-color: #2A5CA8; /* Darker blue on hover */
 }
 
 /* About and Tracks Content */
@@ -186,7 +194,6 @@ nav a:hover, nav a[aria-current="page"] {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1.2rem;
 }
 
 .track {
@@ -195,7 +202,6 @@ nav a:hover, nav a[aria-current="page"] {
 
 .track h3 {
     margin-bottom: 0.5rem;
-    color: #333333; /* Dark Gray to match body text */
 }
 
 /* Contact Form */
@@ -203,14 +209,13 @@ nav a:hover, nav a[aria-current="page"] {
     padding: 2rem;
     max-width: 500px;
     margin: 0 auto;
-    font-size: 1.2rem;
 }
 
 .contact-content label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact-content input, .contact-content textarea {
@@ -220,7 +225,7 @@ nav a:hover, nav a[aria-current="page"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact-content textarea {
@@ -229,36 +234,49 @@ nav a:hover, nav a[aria-current="page"] {
 }
 
 .contact-content button {
-    background-color: #E69500; /* Darker yellow */
-    color: #FFFFFF;
+    background-color: #F5A623;
+    color: #212121;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
 }
 
 .contact-content button:hover {
-    background-color: #2A5CA8;
+    background-color: #2A5CA8; /* Darker blue on hover */
+}
+
+#thank-you-message {
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #333333;
+    background-color: #F0F4F8; /* Light gray background for contrast */
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
 /* Footer */
 footer {
-    background-color: #2A5CA8;
+    background-color: #092f69; /* Darker blue for better contrast */
     color: #FFFFFF;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 1.1rem;
+}
+
+footer span {
+    font-weight: bold;
 }
 
 footer a {
-    color: #FFC107; /* Lighter yellow for contrast */
+    color: #F5A623; /* Sunshine Yellow */
     text-decoration: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
@@ -278,7 +296,7 @@ footer a:hover {
     }
 
     .logo {
-        max-width: 250px;
+        max-width: 250px; /* Larger logo on desktop */
     }
 
     nav ul {
